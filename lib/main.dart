@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Pages/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,10 +16,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
 
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.blue).copyWith(background: Colors.white)
 
       ),
-      home: const MyHomePage(title: 'Practice',),
+      home: Home(),
     );
   }
 }
